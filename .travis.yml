@@ -1,10 +1,9 @@
 language: go
 go:
-- master
+- 1.12.x
 env:
 - GO111MODULE=on
 script:
-- go version
 - CGO_ENABLED=0 GOARCH=amd64 GOOS=darwin go build -o beihangLogin.darwin.amd64 .
 - CGO_ENABLED=0 GOARCH=amd64 GOOS=freebsd go build -o beihangLogin.freebsd.amd64 .
 - CGO_ENABLED=0 GOARCH=386 GOOS=freebsd go build -o beihangLogin.freebsd.386 .
@@ -16,5 +15,5 @@ script:
 - CGO_ENABLED=0 GOARCH=mips64 GOOS=linux go build -o beihangLogin.linux.mips64 .
 - CGO_ENABLED=0 GOARCH=mips64le GOOS=linux go build -o beihangLogin.linux.mips64le .
 - CGO_ENABLED=0 GOARCH=mipsle GOOS=linux go build -o beihangLogin.linux.mipsle .
-- CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build -o beihangLogin.windows.amd64 .
-- CGO_ENABLED=0 GOARCH=386 GOOS=windows go build -o beihangLogin.windows.386 .
+- CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build -o beihangLogin.windows.amd64.exe .
+- CGO_ENABLED=0 GOARCH=386 GOOS=windows go build -o beihangLogin.windows.386.exe .
