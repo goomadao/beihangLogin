@@ -1,6 +1,6 @@
 # beihangLogin
 
-[![Build Status](https://dev.azure.com/834724245/beihangLogin/_apis/build/status/goomadao.beihangLogin?branchName=master)](https://dev.azure.com/834724245/beihangLogin/_build/latest?definitionId=1&branchName=master)
+[![Build Status](https://travis-ci.org/goomadao/beihangLogin.svg?branch=master)](https://travis-ci.org/goomadao/beihangLogin)
 
 北航校园网登录客户端
 
